@@ -26,4 +26,12 @@ Integration options:
                (prevents particles from skipping across vectors).
   cfldx      : Spatial resolution parameter used in CFL condition. 
                Smaller cfldx → smaller adaptive timestep for stability.
+               
+Try:
+  * Change the linear flow field to get a Stable/Unstable Node, Spiral, Center and Saddle
+  * Change the eigenvalues in the above to find fast and slow directions
+  * Find cases with degenerate fixed points
+  * Systems with Homoclinic and Heteroclinic orbits
+  * Glycolysis example with stable fixed point and limit cycle (revisit the ``trapping region'')
+  * Van der Pol Oscillator
 */

@@ -15,14 +15,6 @@ Interactions:
   [Click]  Spawn a new trajectory at the clicked position
   [c]      Clear all trajectories
   [s]      Save a "png" image of the current state
-  
-Try:
-  * Change the linear flow field to get a Stable/Unstable Node, Spiral, Center and Saddle
-  * Change the eigenvalues in the above to find fast and slow directions
-  * Find cases with degenerate fixed points
-  * Systems with Homoclinic and Heteroclinic orbits
-  * Glycolysis example with stable fixed point and limit cycle (revisit the ``trapping region'')
-  * Van der Pol Oscillator
 */
 
 float a11 = 1, a12 = 0, a21 = 0, a22 = -2;

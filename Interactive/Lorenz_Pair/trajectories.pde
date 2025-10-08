@@ -29,7 +29,7 @@ class Trajectory {
       
       xcur += dt/6.0 * (k1[0] + 2*k2[0] + 2*k3[0] + k4[0]);
       ycur += dt/6.0 * (k1[1] + 2*k2[1] + 2*k3[1] + k4[1]);
-      zcur += dt/6.0 * (k1[2] + 2*k2[2] + k4[2]);
+      zcur += dt/6.0 * (k1[2] + 2*k2[2] + 2*k3[2] + k4[2]);
       tcur += dt;
       storePoint();
       xsign = xcur > 0 ? 1 : -1;

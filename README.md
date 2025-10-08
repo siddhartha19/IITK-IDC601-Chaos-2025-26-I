@@ -6,6 +6,16 @@ Indian Institute of Technology, Kanpur
 ---
 Numerical tools and visualization codes used during the course can be found here. These are shared as Jupyter Notebooks and Processing sketches. Below are useful references and recommended (⭐) reading material for and beyond the course.
 
+## Interactive Visualizations
+
+This is a set of special tools developed to let you test and play with numerical integration of dynamical systems, focusing on visualization and interactivity. To run these codes, you need to download [Processing](https://processing.org/) which is an amazing platform (freely available) for making generative art and visual programming. The codes have been written in Java.
+
+1. **Flow 2D (Basic)** - To visualize flow fields from 2D systems (both linear and nonlinear), and to evolve trajectories bly clicking.
+1. **Flow 2D (Advanced)** - With additional functionality allowing you to zoom in and out of the vector field, show fixed points, nullclines, toggle grid, vectors etc.
+1. **Complex Transformation** - To visualize the transformation of the complex plane under z -> z^n.
+1. **Dynamics on a Torus** - Coupled oscillators (or any other 2pi period 2D systems) evolving on a Torus. You can click to add trajectories, toggle phase-plane view etc.
+1. **Lorenz Pair** - Visualize evolution of 2 nearby trajectories under the Lorenz equations, with x(t) vs (t) and phase-plane projections, can toggle views, symbolic dynamics etc.
+
 ## References
 
 1. ⭐**Steven H. Strogatz – *Nonlinear Dynamics and Chaos***  

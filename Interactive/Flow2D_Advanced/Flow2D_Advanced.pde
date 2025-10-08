@@ -33,23 +33,23 @@
  
 */
 
-float a11 = 0.0;
+float a11 = -1.0;
 float a12 = 1.0;
-float a21 = -2.0;
+float a21 = 1.0;
 float a22 = 0.0;
 //-- Limits of the axes: (xmin, xmax) and (ymin, ymax)
 float range = 10.0;
 //float xmin = -1, xmax = 4, ymin = -1, ymax = 4;
 float xmin = -range, xmax = range, ymin = -range, ymax = range;
 
-float dt = 5.0;      //-- Used for drawing the vector field
+float dt = 4.0;      //-- Used for drawing the vector field
 float step = 25;
-float dtpart = 0.01; //-- Time step for particle evolution
+float dtpart = 0.02; //-- Time step for particle evolution
 float maglim = 12.0;
 
 float axisdiv = 5;
 
-int Ntot = 1000; //-- History length of trajectories
+int Ntot = 200; //-- History length of trajectories
 color bg = #000000;
 color [] cols = {#ff595e, #ff7655, #ff924c, #ffae43, #ffca3a, #c5ca30, #8ac926, #52a675, #1982c4, #6a4c93, #005f73, #0a9396, #94d2bd, #e9d8a6, #ecba53, #ee9b00, #ca6702, #bb3e03, #ae2012, #9b2226, #2b9348, #80b918, #bfd200, #dddf00, #ffff3f};
 
@@ -103,7 +103,12 @@ void draw() {
 void mousePressed() {
   float x = map(mouseX, 0, width, xmin, xmax);
   float y = map(height - mouseY, 0, height, ymin, ymax); //-- Taking the y wrt bottom of the window as 0, then mapped to -range,range
-  
+  particles.add(new Particle(x, y, cols[int(random(cols.length))]));
+}
+
+void mouseDragged() {
+  float x = map(mouseX, 0, width, xmin, xmax);
+  float y = map(height - mouseY, 0, height, ymin, ymax); //-- Taking the y wrt bottom of the window as 0, then mapped to -range,range
   particles.add(new Particle(x, y, cols[int(random(cols.length))]));
 }
 

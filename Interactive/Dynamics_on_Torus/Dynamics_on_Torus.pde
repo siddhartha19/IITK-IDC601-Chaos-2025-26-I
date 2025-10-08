@@ -9,6 +9,7 @@
  - 'c' key: Clear all trajectories.
  - 'r' key: Toggle rotation (on/off).
  - '+/-': Speed up/Slow down rotation.
+ - 'space': Saveframe
  
         See "readme" for more details
 ----------------------------------------------*/
@@ -18,8 +19,8 @@ int nu = 50, nv = 50;     //-- Number of points
 float R1 = 150, R2 = 120; //-- Radii
 
 //-- Parameters for dynamics
-float a = PI;
-float b = 5;
+float a = 2;
+float b = PI;
 float dt = 0.04;  //-- Integration time step
 int Nt = 1000;    //-- Trail length (ring buffer)
 
@@ -173,4 +174,11 @@ void keyPressed() {
   if (key == 'r' || key == 'R') rotateTorus = !rotateTorus; 
   if (key == '+') angleIncr *= 1.25;
   if (key == '-') angleIncr *= 0.75;
+  if (key == ' ') {
+    String timestamp = nf(year(), 4) + nf(month(), 2) + nf(day(), 2) + "_" +
+                       nf(hour(), 2) + nf(minute(), 2) + nf(second(), 2);
+    String filename = "frame_" + timestamp + ".png";
+    saveFrame(filename);
+    println("Saved frame: " + filename);
+  }
 }

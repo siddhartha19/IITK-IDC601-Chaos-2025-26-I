@@ -27,6 +27,7 @@ void keyPressed() {
   if (key == 'n' || key == 'N') showNullclines = !showNullclines;
   if (key == 'e' || key == 'E') showEquilibria = !showEquilibria;
   if (key == 'p' || key == 'P') showCoord = !showCoord;
+  if (key == 's' || key == 'S') saveHighRes();
   
 }
 

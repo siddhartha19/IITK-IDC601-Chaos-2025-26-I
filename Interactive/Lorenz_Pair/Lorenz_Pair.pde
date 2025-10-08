@@ -20,6 +20,7 @@
    [s]   Show symbolically whether trajectory is at x>0 or x<0
    [r]   Restart trajectories from random initial conditions
    [click] To Pause/Play
+   [space] Saveframe
    
   Parameters:
    sigma, beta: Lorenz model parameters
@@ -254,4 +255,13 @@ void keyPressed() {
   if(key=='l' || key == 'L') showLine = !showLine;
   if(key=='t' || key == 'T') showPhaseTraj = !showPhaseTraj;
   if(key=='s' || key == 'S') showSym = !showSym;
+  
+  if (key == ' ') {
+    String timestamp = nf(year(), 4) + nf(month(), 2) + nf(day(), 2) + "_" +
+                       nf(hour(), 2) + nf(minute(), 2) + nf(second(), 2);
+    String filename = "frame_" + timestamp + ".png";
+    saveFrame(filename);
+    println("Saved frame: " + filename);
+  }
+  
 }

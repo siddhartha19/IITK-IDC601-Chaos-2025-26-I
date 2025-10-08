@@ -1,16 +1,16 @@
 float getudot(float irel, float jrel){
    //return a11*irel + a12*jrel;
-   return irel*(3.0 - irel - 2.0*jrel);
-   //return jrel;
+   //return irel*(3.0 - irel - 2.0*jrel);
+   return jrel;
   //return sin(2.0*jrel);
 }
 
 float getvdot(float irel, float jrel){
    //return -1 * jrel * (irel*irel-1) - irel;
    //return a21*irel + a22*jrel;
-   return jrel*(2.0 - irel - jrel);
+   //return jrel*(2.0 - irel - jrel);
 
-  //return (1.0-irel)*jrel - irel;
+  return 0.5*(1.0-irel*irel)*jrel - irel;
 }
 
 

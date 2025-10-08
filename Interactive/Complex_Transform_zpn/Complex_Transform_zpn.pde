@@ -15,7 +15,7 @@ Interactions and Parameters:
     
 -------------------------------------------------------------------------------------------*/
 
-float n = -1.0; //-- Transformation is z^n
+float n = -2.0; //-- Transformation is z^n
 
 float xrange = 5;
 float yrange = 5;

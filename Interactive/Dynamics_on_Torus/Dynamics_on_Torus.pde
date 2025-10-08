@@ -14,11 +14,11 @@
 ----------------------------------------------*/
 
 //-- Parameters to simply "draw" the torus
-int nu = 50, nv = 30;     //-- Number of points
-float R1 = 150, R2 = 100; //-- Radii
+int nu = 50, nv = 50;     //-- Number of points
+float R1 = 150, R2 = 120; //-- Radii
 
 //-- Parameters for dynamics
-float a = 2.3334;
+float a = PI;
 float b = 5;
 float dt = 0.04;  //-- Integration time step
 int Nt = 1000;    //-- Trail length (ring buffer)

@@ -15,6 +15,7 @@ This is a set of special tools developed to let you test and play with numerical
 1. **Complex Transformation** - To visualize the transformation of the complex plane under z -> z^n.
 1. **Dynamics on a Torus** - Coupled oscillators (or any other 2pi period 2D systems) evolving on a Torus. You can click to add trajectories, toggle phase-plane view etc.
 1. **Lorenz Pair** - Visualize evolution of 2 nearby trajectories under the Lorenz equations, with x(t) vs (t) and phase-plane projections, can toggle views, symbolic dynamics etc.
+1. **Lorenz 3D** - Visualize a cloud of initial conditions evolving on the Lorenz attractor in 3D, with controls to reset and pause evolution, rotation in 3D, colour trajectories etc.
 
 <p align="center"><center>
 <img src="Images/Flow2D.png" width="1000">
@@ -24,6 +25,9 @@ This is a set of special tools developed to let you test and play with numerical
 </p></center>
 <p align="center"><center>
 <img src="Images/Lorenz.png" width="700">
+</p></center>
+<p align="center"><center>
+<img src="Images/Lorenz3D.png" width="800">
 </p></center>
 
 ## References

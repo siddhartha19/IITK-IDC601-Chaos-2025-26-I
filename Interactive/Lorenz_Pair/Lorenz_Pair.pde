@@ -38,7 +38,7 @@
 
 //-- Lorenz model parameters
 float sigma = 10.0;
-float rho   = 28.0;  
+float rho   = 8.0;  
 float beta  = 8.0/3.0;
 float dt = 0.001;
 int stepsPerFrame = 50;

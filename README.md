@@ -74,3 +74,12 @@ The Papers folder includes some interesting papers mentioned/discussed during th
 
 - ⭐**The Hidden Heroines of Chaos**  
   Two women programmers played a pivotal role in the birth of Chaos Theory. Their previously untold [story](https://www.quantamagazine.org/the-hidden-heroines-of-chaos-20190520/) illustrates the changing status of computation in science.
+
+- **Remembrance of Things Past**  
+  How attractor states in the neural networks (like the brain) can determine retrieval of recent memories, and the slow fading away of old ones: [Memories Become Chaotic before They Are Forgotten](https://physics.aps.org/articles/v16/14).
+
+- **Neural Networks**  
+  An article describing attractors in neural networks, with a hands on Python example: [Attractors in Neural Network Circuits: Beauty and Chaos](https://towardsdatascience.com/attractors-in-neural-network-circuits-beauty-and-chaos/).
+
+  
+  
